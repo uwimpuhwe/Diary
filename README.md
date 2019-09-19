@@ -1,2 +1,0 @@
-# DiaryRepo
-myDairy repository
