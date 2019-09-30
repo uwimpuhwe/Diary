@@ -1,24 +1,20 @@
 import diaryEntry from '../models/entryModel';
 
 
-const modifyEntry= (res,req)=>{
- const found = diaryEntry.find(function (a) {
- return a.id === parseInt(req.params.id);
-});
-
-  if (found){
-  const update = {
-      id: found.id,
-      title: req.body.title
-    };
-    let Index = diaryEntry.indexOf(found);
-    diaryEntry.splice(Index, 1, update);
-
-    return res.status(202).json({
-        status :202,
-        message:'already updated',
+const modifyEntry = (res, req) => {
+  const findId = diaryEntry.find(a=>a.id === parseInt(req.params.id));
+  if(findId) {
+    findId.title = req.body.title;
+    return res.status(200).json({
+      status: 200,
+      message: 'entry updated successfully',
+      data: {
+        id: findId.id,
+        created_on: new Date(),
+        title: findId.title
+      }
     });
-    
+
   }
 };
 
