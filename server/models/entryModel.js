@@ -1,4 +1,4 @@
-const diaryEnty = [
+const diaryEntry = [
     
     {id: 1,
        title: 'student',
@@ -21,4 +21,4 @@ const diaryEnty = [
       createdOn: new Date()
     },
 ];
-export default diaryEnty;
+export default diaryEntry;
