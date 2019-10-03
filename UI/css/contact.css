@@ -57,7 +57,7 @@ p{font-size: 20px;}
 }
 .div1{float: right; 
      
-     background-color: rgba(0, 0, 0, 0.418);
+     /* background-color: rgba(0, 0, 0, 0.418); */
      background: cover;
     width: 500px;
     text-align: center;
@@ -68,7 +68,7 @@ p{font-size: 20px;}
     width:500px;
     /* color: rgba(75, 58, 22, 0.616); */
     margin-right: 100px;
-    margin-top: 60px;
+    margin-top: -370px;
     /* transform: rotate(-1deg); */
     padding: 12px;
     
@@ -113,7 +113,7 @@ p{font-size: 20px;}
     justify-content: center;
     list-style-type: none; 
     background-color:rgba(248, 248, 245, 0.4);
-    height: 20vh;
+    height: 10vh;
     flex-wrap:wrap;
     z-index: 1;}
 
@@ -123,6 +123,7 @@ p{font-size: 20px;}
          text-transform: uppercase;
          text-decoration: none;
          color:black;
+         margin-top: -50px;
          }  
          .menu li a:hover {
              color: rgb(20, 10, 34);

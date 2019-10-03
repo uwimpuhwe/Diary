@@ -1,8 +1,8 @@
 import diaryEntry from '../models/entryModel';
 
 
-const modifyEntry = (res, req) => {
-  const findId = diaryEntry.find(a=>a.id === parseInt(req.params.id));
+const modifyEntry = (req, res) => {
+  const findId = diaryEntry.find(a => a.id === parseInt(req.params.id));
   if(findId) {
     findId.title = req.body.title;
     return res.status(200).json({
@@ -15,6 +15,12 @@ const modifyEntry = (res, req) => {
       }
     });
 
+  }
+  else{
+    return res.status(404).json({
+      status:404,
+      message:'NOT FOUND'
+    })
   }
 };
 
