@@ -1,6 +1,7 @@
 import chai, { expect } from 'chai';
 import chaiHTTP from 'chai-http';
-import app from '../server/index';;
+import app from '../index';
+
 chai.use(chaiHTTP);
 describe('Test get all entries', () => {
  it('Checking the status of the api', done => {
@@ -48,6 +49,7 @@ describe('testing updated entreis',() =>{
     .put('/api/v1/entries')
     .end((err,res) =>{
       expect(res.status).to.equals(404);
+     
       expect(res.body).to.be.an('object');
       done();
     })

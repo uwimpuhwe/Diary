@@ -1,0 +1,159 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    background-image: url(../assets/img/back3.jpeg);
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+.header{
+    /* text-align: center; */
+    /* color: white; */
+    background-color:#708090;
+    /* height: 10vh; */
+    padding: 20px;
+    font-size: 20px;
+    /* text-decoration: none; */
+    text-decoration-style: none;
+}
+ .out{
+    margin-left: 1180px;
+}
+.header img{
+    margin-top: -70px;
+}
+.text-container{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ margin-top: -30px; 
+}
+
+.text{
+    padding: 20px;
+    flex-basis: 50px;
+    text-align: center;
+    flex-grow: 1;
+    height: 70vh;
+    justify-items: start;
+    max-width: 100%;
+    width: auto;
+}
+.dashboard{
+    width: 10%;
+    background-color: wheat; 
+    height: 100vh auto;
+    color: white;
+    font-size: 17px; 
+    flex: 1 1px;  
+    height: auto;
+    display: flex;
+    margin-top: -60px;
+    top: 0;
+    right: 0;
+}
+
+.profile{
+    max-width: 100%;
+    height: auto;
+    margin-top: -10px;
+}
+
+.profile a{
+ text-decoration: none;
+ color: rgb(1, 7, 12);
+ padding: 10px;
+ font-size: 20px;
+ margin-top: 50px;
+}
+
+.dash{
+    margin-top: 2em;
+}
+.dash i{
+font-size: 40px;
+}
+.dashboard img{
+    border-radius: 50%;
+}
+.editor{
+    width: 20%;
+    flex: 5 5px;
+}
+.editor p{
+    color: rgb(167, 162, 162);
+    margin-top: 200px;
+    font-size: 50px;
+}
+.adding{
+    width: 18%;
+    background-color:#00324e;
+}
+.add-entry{
+border: 2px solid #708090;
+padding: 5px;
+color: aliceblue;
+margin-top: 20px;
+font-size: 17px;
+}
+#textarea{
+    width: 100%;
+    
+}
+.text ::placeholder{
+  
+    font-size: 20px;
+}
+.logo{
+    margin-top: 0px;
+}
+#btn{
+    background: rgb(7, 133, 122);
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #81819b;
+    padding: 14px 40px;
+    width: 200px;
+    color: white;
+    font-size: 18px;
+}
+#btn:hover{
+    background-color: #00324e;
+    color: #fcfcff;
+}
+/* ====================================Dashboard css================================================ */
+.recent-story-div{
+    background: rgb(241, 243, 243);
+    color: #000008;
+    width: 25%;
+    height: 30vh; 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5em;
+    font-size: 18px;
+    font-family: Georgia;
+    margin: 1%;
+    
+}
+.recent-story-div a{
+    text-decoration: none;
+    color: black;
+}
+.Dashboard-recent{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.imge{
+    max-width: 100%;
+    height: auto;
+    margin-top: -7%; 
+}
+p a{
+    padding: 20px;
+}

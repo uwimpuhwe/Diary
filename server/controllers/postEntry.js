@@ -6,6 +6,7 @@ const postNew =(req, res) => {
   const newItem = {
     id: newId,
     title: req.body.title,
+    detail:req.body.detail,
     createdOn: new Date()
   };
   diaryEntry.push(newItem);
