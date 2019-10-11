@@ -13,10 +13,35 @@ body{
     top: 0px;
     left: 0px;
     right: 0px;
-    height: 10vh;
+    height: 8vh;
+    z-index: 1;
     /* margin-top: 100px; */
 }
-
+.link{
+    text-decoration: none;
+    color: black;   
+}
+.div1 a.out{
+    margin-left:890px;
+}
+.button{
+    background-color: rgb(239, 243, 242);
+    width: 40vh;
+    margin-right: 40px;
+}
+.button a{
+   
+    text-decoration: none;
+    color: rgb(1, 7, 12);
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: center;
+    
+   }
+.div1 a{
+    margin-right: 10px;
+}
     .logo{width: 200px;   
         margin-top:-8px;
     } 
@@ -25,11 +50,11 @@ body{
         padding: 100px;
     }
     .div2{background-color: wheat;  
-        float: right;
-        width: 50vw;
-        height: 80vh;
-        /* margin-top: -400px; */
-        margin-right: 100px;
+        /* float: right; */
+        width: 80vw;
+        height: 100vh;
+       margin-left: 20px;
+        margin-left: auto;
         box-shadow: 5px 10px 30px #a07c7c;
         
     }
@@ -47,22 +72,18 @@ body{
     margin: 20px;
     box-shadow: 5px 10px 30px #0f0000;
 }
-.menu{
+.eMenu{
     margin-top: 70px;    
-    margin-left: 150px;
+    margin-left: -100px;
+
 }
-.save{float: center; 
+/* .save{float: center; 
     text-align: center;
     /* margin-top: -40px; */
-}
+/* } */ 
 
-.copy{text-align: center;
-    margin-top: 200px;
-    background-color: rgba(200, 100, 0, 0.1);
-    padding: 20px;
-    font-size: 20px;
-
- 
+p.copy{text-align: center;
+    
 }
 .log:hover{ 
     background: rgb(4, 36, 36); 
@@ -72,13 +93,109 @@ body{
     width: 100px;
     margin-right: 10px;
 }
-.pen{width: 100px;}
+/* .pen{width: 100px;} */
 .div1 a{color: black; 
     text-decoration: none;
     font-size: 25px;
     margin: 90px;
-    margin-left: 400px;
+    margin-left: 30px;
     /* align-items: center; */
     /* margin-top: -70px; */
 
 } 
+.card{
+    height: 250px;
+    width: 200px;
+    box-shadow: 5px 7px 5px grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+}
+.card2{
+    height: 250px;
+    width: 200px;
+    box-shadow: 5px 7px 5px grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    position: relative;
+    top:-575px;
+    margin-left: 20px;
+}
+.card1{
+    height: 250px;
+    width: 200px;
+    box-shadow: 5px 7px 5px grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    position: relative;
+    right: -230px;
+    top:-287px;
+}
+.card3{
+    height: 250px;
+    width: 200px;
+    box-shadow: 5px 7px 5px grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    position: relative;
+    right: -460px;
+    top:-1148px;
+}
+.card4{
+    height: 250px;
+    width: 200px;
+    box-shadow: 5px 7px 5px grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    position: relative;
+    right: -460px;
+    top:-1147px;
+}
+.card5{
+    height: 250px;
+    width: 200px;
+    box-shadow: 5px 7px 5px grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    position: relative;
+     right: -690px; 
+     top:-1723px; 
+}
+.card6{
+    height: 250px;
+    width: 200px;
+    box-shadow: 5px 7px 5px grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    position: relative;
+     right: -690px; 
+     top:-1720px;  
+}
+
+.edit{
+    width: 60PX;
+}
+.allCard{
+    padding: 30px;
+    /* margin-right: -20px; */
+}

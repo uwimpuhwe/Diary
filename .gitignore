@@ -1,1 +1,5 @@
 node_modules
+<<<<<<< HEAD
+=======
+.nyc_output
+>>>>>>> 882d620f7fb713153ee7fbca5f09a4adee9dcab0
