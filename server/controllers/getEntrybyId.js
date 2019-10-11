@@ -11,7 +11,7 @@ import diaryEntry from '../models/entryModel';
           entry: foundEntry
       });
   } 
-  if(!foundEntry) {
+ else {
       res.status(404).json({
           status : 404,
           message: 'entry of that Id does not exist'
