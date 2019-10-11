@@ -1,4 +1,24 @@
-import diaryEntry from '../models/entryModel';
+import { pool } from '../db';
+
+const allEntries = async(req, res) => {
+    const id = parseInt(req.params.id, 10);
+    const values = [id];
+    const query = 'SELECT * FROM entry WHERE id=$1;';
+
+    const result = await pool.query(query, values);
+    if (result.rows < '1') {
+        res.status(404).send({
+            status: 404,
+            message: 'No Entries found',
+
+        });
+    } else {
+        return res.status(200).send({
+        
+            entry: result.rows,
+        });
+
+
 
  const getOne = (req, res)=> {
   try {
@@ -16,12 +36,10 @@ import diaryEntry from '../models/entryModel';
           status : 404,
           message: 'entry of that Id does not exist'
       })
+
     }
-} catch (error) {
-    res.status(500).json({
-        status : 500,
-        error : 'server' 
-    })
-  }
-}
-export default getOne;
+};
+
+
+
+export default allEntries;

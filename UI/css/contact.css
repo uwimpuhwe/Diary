@@ -67,8 +67,13 @@ p{font-size: 20px;}
     /* border: #427477; */
     width:500px;
     /* color: rgba(75, 58, 22, 0.616); */
+
+    margin-right: 100px;
+    margin-top: 100px;
+
     margin-right: -50px;
     margin-top: -370px;
+
     /* transform: rotate(-1deg); */
     padding: 12px;
     
