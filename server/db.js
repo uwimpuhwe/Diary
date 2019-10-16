@@ -1,4 +1,3 @@
-
 const pg = require('pg');
 
 const dotenv = require('dotenv');
@@ -22,7 +21,18 @@ const createTables = () => {
         entry_detail VARCHAR(128) NOT NULL,
         created_on VARCHAR(128) NOT NULL
       )`;
-  pool.query(userTable)
+      const myDiaryUsers = `CREATE TABLE IF NOT EXISTS
+      users(
+        userid SERIAL PRIMARY KEY,
+        first_name VARCHAR(128) NOT NULL,
+        second_name VARCHAR(128) NOT NULL,
+        email VARCHAR NOT NULL,
+        username VARCHAR (50) NOT NULL,
+        password VARCHAR NOT NULL,
+        confirm_password VARCHAR NOT NULL
+      )`;
+      const queries =`${userTable}; ${myDiaryUsers}`;
+  pool.query(queries)
     .then((res) => {
       console.log(res);
       pool.end();
