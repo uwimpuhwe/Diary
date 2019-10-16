@@ -1,9 +1,17 @@
-import diaryEntry from '../models/entryModel';
 
- const allEntries= (req, res)=> {
+import { pool } from '../db';
+ const allEntries= async (req, res)=> {
+  
+    const query = 'SELECT * FROM entry;';
+    pool.query(query, (error, result) => {
+    
     res.status(200).json({
         status : 200,
-        entry : diaryEntry,
-    })
-  };
+        message : "found",
+        entry: result.rows,
+    });
+    
+  });
+
+ };
   export default allEntries;
