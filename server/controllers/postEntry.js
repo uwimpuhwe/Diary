@@ -10,7 +10,7 @@ const postNew = async(req, res) => {
     const created_on = new Date();
 
     let newItem = {
-        // entryId: req.body.id,
+       
         title: req.body.title,
         description: req.body.description,
     };
